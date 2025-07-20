@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "949152182840",
+    "firebase_url": "https://skripsi-reza-fe867-default-rtdb.firebaseio.com",
+    "project_id": "skripsi-reza-fe867",
+    "storage_bucket": "skripsi-reza-fe867.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:949152182840:android:1822c1ea21ceea39ff6ccd",
+        "android_client_info": {
+          "package_name": "com.example.reza_skripsi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-m4PXnXL-w18WtYCjup3S8h3ohOYar2Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

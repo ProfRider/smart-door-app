@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0056FF</color> <!-- Warna teks REGISTER -->
+    <color name="colorAccent">#FF8C00</color> <!-- Warna tombol SIGNUP -->
+    <color name="textPrimary">#000000</color> <!-- Warna teks utama seperti Nama, Email -->
+    <color name="textSecondary">#666666</color> <!-- Warna teks kecil seperti "Already have an account?" -->
+    <color name="backgroundMain">#FFFFFF</color> <!-- Latar belakang utama -->
+    <color name="inputBackground">#F5F5F5</color> <!-- Warna latar belakang input -->
+    <color name="buttonText">#FFFFFF</color> <!-- Warna teks dalam tombol -->
+    <color name="blueLight1">#E6F0FF</color> <!-- Untuk wave biru muda -->
+    <color name="blueLight2">#B3D1FF</color> <!-- Untuk wave biru lebih gelap -->
+    <color name="blueLight3">#79AEFF</color> <!-- Untuk wave biru lebih gelap -->
+
+    <color name="hintColor">#999999</color> <!-- Warna hint -->
+    <color name="white">#FFFFFF</color>
+</resources>

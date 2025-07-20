@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Rezaskripsi" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/blueLight2</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/blueLight2</item>
+        <item name="android:windowLightStatusBar">false</item> <!-- Tetap ikon putih di night -->
+
+        <!-- Background umum -->
+        <item name="android:colorBackground">@color/backgroundMain</item>
+
+        <!-- Warna aksen -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

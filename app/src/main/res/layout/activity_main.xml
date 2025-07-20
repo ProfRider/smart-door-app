@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg_auth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+    <Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/blueLight2"
+        android:title="SMART DOOR"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageDoor"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topAppBar" />
+
+    <TextView
+        android:id="@+id/statusDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poopins_bold"
+        android:text="Kondisi Pintu"
+        android:textColor="@color/blueLight3"
+        android:textSize="24sp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageDoor" />
+
+    <TextView
+        android:id="@+id/lastOpenDoor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_reguler"
+        android:text="Terakhir dibuka"
+        android:textColor="@color/blueLight3"
+
+        android:textSize="16sp"
+        android:layout_marginHorizontal="50dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusDoor" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/customSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poopins_bold"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastOpenDoor"
+        app:thumbTint="@color/colorPrimary"
+        app:trackTint="@color/textSecondary" />
+
+    <TextView
+        android:id="@+id/aktifkan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:fontFamily="@font/poopins_bold"
+        android:text="Lindungi Kunci"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:textColor="@color/blueLight3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/customSwitch" />
+
+    <TextView
+        android:id="@+id/kataKunci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_reguler"
+        android:text="Kata Kunci Voice Anda:"
+        android:textColor="@color/blueLight3"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="50dp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aktifkan" />
+
+    <EditText
+        android:id="@+id/etKunciVoice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/custom_edittext"
+        android:drawablePadding="8dp"
+        android:hint="Kunci Voice"
+        android:imeOptions="actionNext"
+        android:importantForAutofill="yes"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:singleLine="true"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:textColor="@color/blueLight3"
+        android:textColorHighlight="@color/blueLight3"
+        android:textColorHint="@color/blueLight3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kataKunci" />
+
+    <Button
+        android:id="@+id/btnEditVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/blueLight3"
+        android:fontFamily="@font/poopins_bold"
+        android:text="Edit"
+        android:textSize="16dp"
+        android:visibility="visible"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etKunciVoice" />
+    <Button
+        android:id="@+id/btnKirimEditVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/blueLight3"
+        android:fontFamily="@font/poopins_bold"
+        android:text="Update"
+        android:visibility="gone"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etKunciVoice" />
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poopins_bold"
+        android:text="logout"
+        android:textAlignment="center"
+        android:textColor="@color/blueLight3"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

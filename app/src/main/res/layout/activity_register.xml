@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/bg_auth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".auth.Register">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- SCROLLABLE AREA -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="90dp"
+                android:fontFamily="@font/poopins_bold"
+                android:text="Selamat Datang"
+                android:textColor="@color/blueLight3"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_reguler"
+                android:text="Silahkan isi formulir berikut untuk mendapatkan akses akun aplikasi ini"
+                android:textColor="@color/blueLight3"
+                android:textSize="18sp" />
+
+            <!-- FORM AREA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/usernameReg"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Username"
+                    android:textColorHint="@color/blueLight3"
+                    android:padding="8dp"
+                    android:textColor="@color/blueLight3"
+                    android:layout_marginTop="40dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:autofillHints="username"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/emailReg"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColorHint="@color/blueLight3"
+                android:textColor="@color/blueLight3"
+                android:layout_marginTop="20dp"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:autofillHints="email"
+                android:importantForAutofill="yes"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/passwordReg"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_security_24"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:textColorHint="@color/blueLight3"
+                android:padding="8dp"
+                android:textColor="@color/blueLight3"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:imeOptions="actionNext"
+                android:autofillHints="newPassword"
+                android:importantForAutofill="yes"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/passwordConfirmReg"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableLeft="@drawable/baseline_security_24"
+                    android:drawablePadding="8dp"
+                    android:hint="Konfirmasi Password"
+                    android:textColorHint="@color/blueLight3"
+                    android:padding="8dp"
+                    android:textColor="@color/blueLight3"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"
+                    android:autofillHints="newPassword"
+                    android:importantForAutofill="yes"/>
+
+
+
+                <Button
+                    android:id="@+id/btnRegisterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="REGISTER"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poopins_bold"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/blueLight3"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poopins_bold"
+                    android:text="atau"
+                    android:textColor="@color/blueLight3"
+                    android:textAlignment="center"
+                    android:paddingEnd="12dp"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnRegisterGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:drawableLeft="@drawable/baseline_local_library_24"
+                    android:text="Register Dengan Google"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poopins_bold"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/blueLight3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poopins_bold"
+                    android:text="Sudah memiliki akun?"
+                    android:textColor="@color/blueLight3"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    android:paddingEnd="12dp"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/toLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poopins_bold"
+                    android:text="Login disini"
+                    android:textColor="@color/blueLight3"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold"
+                    android:paddingEnd="12dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
